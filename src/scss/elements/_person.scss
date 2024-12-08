@@ -1,0 +1,22 @@
+.person {
+	display: grid;
+	grid-template-columns: 163px auto;
+	grid-template-rows: repeat(3, auto);
+	gap: 15px 30px;
+}
+.person__img {
+	grid-row: span 3;
+	border: var(--standart-bd);
+}
+.person__name {
+	grid-row: span 1;
+
+	font-family: var(--second-family);
+	font-weight: 300;
+	font-size: 26px;
+	line-height: 100%;
+}
+.person__post {
+	grid-row: span 1;
+	font-size: 16px;
+}

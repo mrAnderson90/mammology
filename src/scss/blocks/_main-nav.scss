@@ -1,0 +1,24 @@
+.main-nav {
+}
+.main-nav__list {
+	display: flex;
+	align-items: center;
+	column-gap: 30px;
+}
+
+.main-nav__item {
+}
+
+.main-nav__link,
+a.main-nav__link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 6px 18px;
+	border: var(--standart-bd);
+
+	font-family: var(--font-family);
+	font-size: 18px;
+	color: var(--black);
+}

@@ -1,0 +1,11 @@
+mixin person(id, name, post)
+	-
+		const imgPath = `img/agency/person-${id}.png`;
+
+	.person
+			.person__img
+				img(src=imgPath, alt=name)
+			.person__name
+				p= name
+			.person__post
+				p= post

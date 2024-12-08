@@ -1,0 +1,38 @@
+.card {
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	.card__body {
+		position: relative;
+		z-index: 1;
+		height: 100%;
+	
+		border: var(--standart-bd) ;
+		border-radius: var(--radius);
+	
+		background-color: var(--white);
+	}
+
+	&::after {
+		content: "";
+
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+
+		border-radius: var(--radius);
+		background-color: var(--primary-dark);
+	}
+
+	&--outline {
+
+		&::after {
+			border: var(--standart-bd) ;
+			background-color: unset;
+		}
+	}
+}

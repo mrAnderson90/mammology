@@ -1,0 +1,32 @@
+// Base
+@import 'base/reset';
+@import 'base/vars';
+@import 'base/mixins';
+@import 'base/base';
+@import 'base/container';
+
+// Секции
+@import 'blocks/main';
+
+// Блоки
+@import "blocks/header";
+@import "blocks/main-nav";
+@import "blocks/promo";
+@import "blocks/about";
+@import "blocks/news";
+@import "blocks/news";
+@import "blocks/new";
+@import "blocks/statistics";
+@import "blocks/prevention";
+@import "blocks/symptoms";
+@import "blocks/learning";
+@import "blocks/agency";
+
+// Элементы
+@import 'elements/title';
+@import 'elements/btns';
+@import 'elements/card';
+@import 'elements/heart';
+@import 'elements/person';
+
+// Скрипты

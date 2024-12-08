@@ -1,0 +1,13 @@
+section.section.news
+	.container 
+		h2.news__title.title Новости нашей&nbsp;школы
+		.news__slider
+			-for (var i = 1; i <= 3; i++)
+				+news-article()
+					p Приглашаем вас 23 ноября в 12:00 на особенное мероприятие
+		ul.news__dots
+			- for (var i = 0; i < 5; i++)
+					if i === 0
+						li.news__dot.active
+					else
+						li.news__dot

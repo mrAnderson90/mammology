@@ -1,0 +1,24 @@
+:root {
+	// Sizes
+	--radius: 8px;
+
+	// Fonts
+	--font-family: 'Nunito Sans', sans-serif;
+	--second-family: 'Unbounded', sans-serif;
+
+	// Colors
+	--light: #ba9fcc;
+	--bright: #c1b3d2;
+	--purple: #4e267e;
+	--white: #ffffff;
+	--gray: #d9d9d9;
+	--black: #000000;
+
+	// Color-scheme
+	--primary: var(--light);
+	--primary-dark: var(--purple);
+	--primary-bright: var(--bright);
+
+	// Border
+	--standart-bd: 2px solid var(--primary-dark);
+}

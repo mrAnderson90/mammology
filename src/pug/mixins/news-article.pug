@@ -1,0 +1,13 @@
+mixin news-article(id = 1, date = '18.11.2024')
+	-
+		const imgPath = `img/news/article-image-${id}.jpg`;
+		const imgAlt = `Article ${id}`;
+
+	article.new
+		.new__header
+			img(src=imgPath, alt=imgAlt).new__foto
+			.new__date 
+				p= date
+		.new__content
+			block
+		a(href="#!").new__link Читать полностью

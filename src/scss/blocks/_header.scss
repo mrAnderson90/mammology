@@ -1,0 +1,19 @@
+.header {
+	padding: 30px 0;
+}
+.header__row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 32px;
+}
+
+.header__logo,
+a.header__logo {
+	display: block;
+	width: 78px;
+	height: 78px;
+}
+
+.logo {
+}

@@ -1,0 +1,11 @@
+.main {
+	margin-bottom: 50px;
+
+	@include tablet {
+		margin-bottom: 40px;
+	}
+
+	@include mobile {
+		margin-bottom: 30px;
+	}
+}

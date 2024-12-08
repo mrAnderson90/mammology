@@ -1,0 +1,45 @@
+.learning {
+}
+
+.learning__body {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 30px;
+}
+
+.learning__row {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-end;
+	column-gap: 64px;
+	width: 100%;
+
+	&--reverse {
+		flex-direction: row-reverse;
+
+		img {
+			transform: scaleX(-1);
+		}
+	}
+
+	&--center {
+		justify-content: center;
+	}
+}
+
+.learning__content {
+	flex-basis: 50%;
+}
+
+.learning__direction {
+
+}
+
+.learning__card {
+	max-width: 512px;
+
+	p {
+		padding: 20px;
+	}
+}

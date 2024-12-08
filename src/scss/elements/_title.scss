@@ -1,0 +1,13 @@
+.title {
+	margin-bottom: 30px;
+
+	font-family: var(--second-family);
+	font-weight: 400;
+	font-size: 75px;
+	line-height: 100%;
+	color: var(--primary-dark);
+
+	&--light {
+		color: var(--white);
+	}
+}

@@ -1,0 +1,26 @@
+-
+	const symptoms = [
+		'Выраженная ассиметрия молочных желез',
+		'Наличие уплотнений',
+		'Изменение состояния кожи и сосков',
+		'Наличие болезненности, покраснений, синяков',
+		'Наличие патологических выделений',
+	];
+
+section.section.symptoms
+	.container
+		.symptoms__body 
+			.symptoms__content
+				h2.symptoms__title.title.title--light Симптомы
+				p.symptoms__info Помимо регулярных профилактических осмотров, маммографию можно пройти по симптоматическим показаниям.
+				h3.symptoms__subtitle Если вы наблюдаете у себя эти симптомы, то необходимо записаться на прием к гинекологу или маммологу:
+				ul.symptoms__cards
+					each item in symptoms
+						li.symptoms__card
+							.card
+								p.card__body.symptom= item
+			.symptoms__materials
+				.symptoms__img
+					img(src="img/methodological_materials/flayer.png", alt="Флаер Симптомы")
+				.symptoms__btn
+					a.btn.btn--primary.btn--wide(href="#!") Скачать буклет

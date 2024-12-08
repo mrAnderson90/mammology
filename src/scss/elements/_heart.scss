@@ -1,0 +1,19 @@
+.heart {
+	position: absolute;
+	display: inline-block;
+
+	&--small {
+		width: 53px;
+		height: 53px;
+	}
+
+	&--medium {
+		width: 71px;
+		height: 71px;
+	}
+
+	&--large {
+		width: 76px;
+		height: 76px;
+	}
+}

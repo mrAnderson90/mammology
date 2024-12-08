@@ -1,0 +1,91 @@
+.about {
+}
+
+.about__header {
+	position: relative;
+	margin-bottom: 40px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	column-gap: 106px;
+}
+
+.about__title {
+}
+
+.about__services {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 30px;
+}
+
+.about__service {
+	width: 100%;
+	padding: 18px;
+
+	text-align: center;
+}
+
+.about__content {
+	margin-bottom: 67px;
+
+	display: flex;
+	flex-direction: column;
+	row-gap: 35px;
+}
+
+.about__text {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+
+	&--reverse {
+		justify-content: flex-end;
+	}
+
+	p {
+		max-width: 60%;
+		text-align: justify;
+	}
+}
+
+.about__arrow {
+	display: block;
+	position: absolute;
+	top: -10px;
+	left: 30%;
+
+	transform: translateX(-50%);
+}
+
+.about__footer {
+	padding: 10px 0;
+
+	background-color: var(--primary);
+	color: var(--white);
+	text-align: center;
+}
+
+.about__decor {
+
+	&--1 {
+		top: 0;
+		left: 40%;
+		transform: rotate(-15.77deg) translate(-50%, -50%);
+	}
+
+	&--2 {
+		top: 50%;
+		right: 15%;
+		transform: rotate(16.87deg) translateY(-50%);
+	}
+
+	&--3 {
+		top: 60%;
+		left: 10%;
+		transform: rotate(-15.77deg) translate(-50%, -50%);
+	}
+}

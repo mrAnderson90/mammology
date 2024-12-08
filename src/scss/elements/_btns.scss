@@ -1,0 +1,42 @@
+.btn,
+a.btn {
+	display: inline-block;
+	padding: 32px 39px;
+	border-radius: var(--radius);
+
+	display: flex;
+	column-gap: 10px;
+	justify-content: center;
+	align-items: center;
+
+	font-family: var(--second-family);
+	font-size: 17px;
+	font-weight: 400;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+
+	opacity: 1;
+	transition: all 0.2s ease-in-out;
+
+	&--primary {
+		background-color: var(--primary-dark);
+
+		&:hover {
+			opacity: 0.8;
+			transition: all 0.2s ease-in-out;
+		}
+
+		&:active {
+			opacity: 1;
+			transform: translateY(2px);
+			transition: all 0.2s ease-in-out;
+		}
+	}
+
+	&--wide {
+		width: 100%;
+		height: 100%;
+		padding: 32px 39px;
+	}
+}
