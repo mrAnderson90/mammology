@@ -17,8 +17,21 @@ a.main-nav__link {
 
 	padding: 6px 18px;
 	border: var(--standart-bd);
+	border-radius: var(--radius);
 
 	font-family: var(--font-family);
 	font-size: 18px;
 	color: var(--black);
+
+	transition: all .3s ease-in-out;
+
+	&:hover {
+		color: var(--primary);
+		border-color: var(--primary);
+		transition: all .3s ease-in-out;
+	}
+
+	&:active {
+		transform: translateY(-2px);
+	}
 }

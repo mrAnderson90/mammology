@@ -1,10 +1,28 @@
-section.section.news
+-
+	const news = [
+		{
+			id: 1,
+			date: '18.11.2024',
+			title: 'Приглашаем вас 23 ноября в 12:00 на особенное мероприятие'
+		},
+		{
+			id: 2,
+			date: '13.11.2024',
+			title: 'Продолжаем посещать различные учреждения области'
+		},
+		{
+			id: 3,
+			date: '11.10.2024',
+			title: 'Наши волонтеры посетили медицинский колледж НИУ «БелГУ»'
+		}
+	];
+
+section.section.news#news
 	.container 
 		h2.news__title.title Новости нашей&nbsp;школы
 		.news__slider
-			-for (var i = 1; i <= 3; i++)
-				+news-article()
-					p Приглашаем вас 23 ноября в 12:00 на особенное мероприятие
+			each artile in news
+				+news-article(artile.id, artile.date, artile.title)
 		ul.news__dots
 			- for (var i = 0; i < 5; i++)
 					if i === 0

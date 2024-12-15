@@ -1,4 +1,4 @@
-mixin news-article(id = 1, date = '18.11.2024')
+mixin news-article(id, date, title)
 	-
 		const imgPath = `img/news/article-image-${id}.jpg`;
 		const imgAlt = `Article ${id}`;
@@ -9,5 +9,5 @@ mixin news-article(id = 1, date = '18.11.2024')
 			.new__date 
 				p= date
 		.new__content
-			block
+			p= title
 		a(href="#!").new__link Читать полностью

@@ -1,5 +1,6 @@
 include ../mixins/news-article.pug
 include ../mixins/person.pug
+include ../mixins/partner.pug
 
 doctype html
 html(lang="ru")
@@ -20,7 +21,8 @@ html(lang="ru")
 			include includes/symptoms
 			include includes/learning
 			include includes/agency
+			include includes/partners
 
-		footer
+		include includes/footer
 
 		script(src="js/index.js")

@@ -1,0 +1,35 @@
+-
+  const partners = [
+    {
+      id: 1,
+      name: 'Министерство здравоохранения Белгородский области',
+      imgPath: 'minzdrav.png',
+    },
+    {
+      id: 2,
+      name: 'ОГБУЗ «Городская поликлиника г. Белгорода»',
+      imgPath: 'ogbuz.png',
+    },
+    {
+      id: 3,
+      name: 'Областной центр общественного здоровья и медицинской профилактики',
+      imgPath: 'obl-center-med-prof.png',
+    },
+    {
+      id: 4,
+      name: 'ОГБУЗ Белгородский онкологический диспансер',
+      imgPath: 'ogbuz-onko.png',
+    },
+    {
+      id: 5,
+      name: 'Волонтеры-медики Белгородская область',
+      imgPath: 'volunteers.png',
+    },
+  ];
+
+section.section.partners
+  .container
+    h3.title.title--sm Наши партнеры:
+    ul.partners__list
+      each partner in partners
+        +partner(partner.name, partner.imgPath)
