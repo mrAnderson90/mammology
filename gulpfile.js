@@ -79,7 +79,7 @@ function browsersync() {
 function building() {
 	return src([
 		'app/css/style.css',
-		'app/img/*.*',
+		'app/img/**/*.*',
 		'app/js/**/*.js',
 		'app/*.html'
 	], { base: 'app' })
