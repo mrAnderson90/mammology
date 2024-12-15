@@ -10,13 +10,14 @@ const webp = require('gulp-webp');
 const imagemin = require('gulp-imagemin');
 const newer = require('gulp-newer');
 const pug = require('gulp-pug');
+const clean = require('gulp-clean');
 
 const pugSettings = {
 	includePaths: 'src/components'
 };
 
 function cleanDist() {
-	return src('dist').pipe(clean());
+	return src('docs').pipe(clean());
 }
 
 function pages() {
@@ -24,12 +25,6 @@ function pages() {
 		.pipe(pug({ pretty: true }))
 		.pipe(dest('app/'))
 		.pipe(browserSync.stream());
-}
-
-function fonts() {
-	return src(['src/webfonts/*.*'], { base: 'src/webfonts' })
-		.pipe(newer('app/webfonts'))
-		.pipe(dest('app/webfonts'))
 }
 
 function images() {
@@ -85,13 +80,12 @@ function building() {
 	return src([
 		'app/css/style.css',
 		'app/img/*.*',
-		'app/js/bundle.js',
+		'app/js/**/*.js',
 		'app/*.html'
 	], { base: 'app' })
-		.pipe(dest('dist'))
+		.pipe(dest('docs'))
 }
 
-exports.fonts = fonts;
 exports.pages = pages;
 exports.styles = styles;
 exports.scripts = scripts;
@@ -101,4 +95,4 @@ exports.browsersync = browsersync;
 
 exports.build = series(cleanDist, building);
 
-exports.default = parallel(fonts, styles, scripts, images, pages, browsersync, watching);
+exports.default = parallel(styles, scripts, images, pages, browsersync, watching);
