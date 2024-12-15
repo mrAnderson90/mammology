@@ -26,6 +26,12 @@ function pages() {
 		.pipe(browserSync.stream());
 }
 
+function fonts() {
+	return src(['src/webfonts/*.*'], { base: 'src/webfonts' })
+		.pipe(newer('app/webfonts'))
+		.pipe(dest('app/webfonts'))
+}
+
 function images() {
 	return src(['src/img/**/*.*', '!src/img/src/*.svg'], { base: 'src/img' })
 		.pipe(newer('app/img'))
@@ -59,7 +65,7 @@ function scripts() {
 		.pipe(browserSync.stream());
 }
 
-function watching() {
+async function watching() {
 	watch(['src/scss/**/*.scss'], styles);
 	watch(['src/img/**/*.*'], images);
 	watch(['src/js/**/*.js'], scripts);
@@ -85,6 +91,7 @@ function building() {
 		.pipe(dest('dist'))
 }
 
+exports.fonts = fonts;
 exports.pages = pages;
 exports.styles = styles;
 exports.scripts = scripts;
@@ -94,4 +101,4 @@ exports.browsersync = browsersync;
 
 exports.build = series(cleanDist, building);
 
-exports.default = parallel(styles, scripts, images, pages, browsersync, watching);
+exports.default = parallel(fonts, styles, scripts, images, pages, browsersync, watching);
