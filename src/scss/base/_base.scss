@@ -11,6 +11,14 @@ body {
 	font-size: 20px;
 	line-height: 140%;
 	color: var(--black);
+
+	@include tablet {
+		font-size: 15px;
+	}
+
+	@include mobile {
+		font-size: 14px;
+	}
 }
 
 .section {

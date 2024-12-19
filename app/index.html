@@ -32,8 +32,16 @@
         </div>
         <div class="container">
           <div class="promo__body">
-            <div class="promo__img"><img src="img/promo/promo-lg-01.jpg" alt="lection-1"></div>
-            <div class="promo__img promo__img--small"><img src="img/promo/promo-lg-02.jpg" alt="lection-2"></div>
+            <div class="promo__img">
+              <picture>
+                <source srcset="img/promo/promo-md-01.jpg" media="(max-width: 1250px)"><img src="img/promo/promo-lg-01.jpg" alt="lection-1">
+              </picture>
+            </div>
+            <div class="promo__img promo__img--small">
+              <picture>
+                <source srcset="img/promo/promo-md-02.jpg" media="(max-width: 1250px)"><img src="img/promo/promo-lg-02.jpg" alt="lection-2">
+              </picture>
+            </div>
             <div class="promo__btn"><a class="btn btn--primary btn--wide" href="#!">Записаться онлайн</a></div>
           </div>
         </div>
@@ -44,7 +52,7 @@
             <div class="about__title">
               <h2 class="title">Школа<br>Маммологии</h2>
               <p>— это проект, который занимается сохранением и&nbsp;профилактикой здоровья женщин.</p>
-            </div><img class="heart heart--small about__decor--1" src="img/heart.png" alt="decor">
+            </div>
             <div class="about__services"> 
               <div class="card">
                 <div class="about__service card__body">Самодиагностика</div>
@@ -59,12 +67,15 @@
           </div>
           <div class="about__content">
             <div class="about__text">
-              <p>Волонтеры данного проекта занимаются обучением женщин самодиагностике молочных желез, направленную на профилактику различных заболеваний, а также рака молочной железы. Помимо этого освещают вопросы женского здоровья.</p><img class="heart heart--medium about__decor--2" src="img/heart.png" alt="decor">
+              <p>Волонтеры данного проекта занимаются обучением женщин самодиагностике молочных желез, направленную на профилактику различных заболеваний, а также рака молочной железы. Помимо этого освещают вопросы женского здоровья.</p>
             </div>
-            <div class="about__text about__text--reverse"><img class="about__arrow" src="img/directions/about-arrow.png" alt="direction">
-              <p>Позволяет выявить проблемы на ранних стадиях и помогает девушкам и женщинам сохранить здоровье своего организма.</p><img class="heart heart--large about__decor--3" src="img/heart.png" alt="decor">
+            <div class="about__text about__text--reverse">
+              <picture class="about__arrow">
+                <source srcset="img/directions/about-arrow-md.png" media="(max-width: 1250px)"><img src="img/directions/about-arrow.png" alt="direction">
+              </picture>
+              <p>Позволяет выявить проблемы на ранних стадиях и помогает девушкам и женщинам сохранить здоровье своего организма.</p>
             </div>
-          </div>
+          </div><img class="heart heart--small about__decor--1" src="img/heart.png" alt="decor"><img class="heart heart--medium about__decor--2" src="img/heart.png" alt="decor"><img class="heart heart--large about__decor--3" src="img/heart.png" alt="decor">
         </div>
         <div class="about__footer">
           <div class="container">
@@ -94,16 +105,6 @@
               </div>
               <div class="new__content">
                 <p>Продолжаем посещать различные учреждения области</p>
-              </div><a class="new__link" href="#!">Читать полностью</a>
-            </article>
-            <article class="new">
-              <div class="new__header"><img class="new__foto" src="img/news/article-image-3.jpg" alt="Article 3"/>
-                <div class="new__date"> 
-                  <p>11.10.2024</p>
-                </div>
-              </div>
-              <div class="new__content">
-                <p>Наши волонтеры посетили медицинский колледж НИУ «БелГУ»</p>
               </div><a class="new__link" href="#!">Читать полностью</a>
             </article>
           </div>

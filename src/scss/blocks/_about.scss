@@ -1,4 +1,5 @@
 .about {
+	margin-bottom: -50px;
 }
 
 .about__header {
@@ -9,9 +10,18 @@
 	justify-content: space-between;
 	align-items: flex-start;
 	column-gap: 106px;
+
+	@include tablet {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 40px;
+	}
 }
 
 .about__title {
+	@include tablet {
+		max-width: 413px;
+	}
 }
 
 .about__services {
@@ -58,6 +68,11 @@
 	left: 30%;
 
 	transform: translateX(-50%);
+
+	@include tablet {
+		top: -15px;
+		width: 75px;
+	}
 }
 
 .about__footer {
@@ -69,22 +84,43 @@
 }
 
 .about__decor {
+	display: block;
 
 	&--1 {
 		top: 0;
 		left: 40%;
 		transform: rotate(-15.77deg) translate(-50%, -50%);
+
+		@include tablet {
+			top: unset;
+			bottom: 0%;
+			left: 10%;
+			transform: rotate(-15.77deg) translate(-50%, 50%);
+		}
 	}
 
 	&--2 {
-		top: 50%;
+		top: 70%;
 		right: 15%;
 		transform: rotate(16.87deg) translateY(-50%);
+
+		@include tablet {
+			top: unset;
+			bottom: 12%;
+		}
 	}
 
 	&--3 {
-		top: 60%;
+		bottom: 0%;
 		left: 10%;
-		transform: rotate(-15.77deg) translate(-50%, -50%);
+		transform: rotate(-15.77deg) translate(-50%, 0);
+
+		@include tablet {
+			top: 10%;
+			bottom: unset;
+			left: unset;
+			right: 20%;
+			transform: rotate(16.87deg) translateY(-50%);
+		}
 	}
 }

@@ -5,6 +5,10 @@
 	display: flex;
 	align-items: center;
 	background-color: var(--primary);
+
+	@include tablet {
+		padding: 15px 0;
+	}
 }
 
 .promo__title {
@@ -12,12 +16,20 @@
 	font-size: 40px;
 	
 	color: var(--white);
+
+	@include tablet {
+		font-size: 31px;
+	}
 }
 
 .promo__title-span--small {
 	display: block;
 	margin-left: 120px;
 	line-height: 100%;
+
+	@include tablet {
+		margin-left: 90px;
+	}
 }
 
 .promo__title-span--large {
@@ -25,6 +37,12 @@
 	margin-top: -22px;
 	font-size: 100px;
 	line-height: 100px;
+
+	@include tablet {
+		margin-top: -16px;
+		font-size: 77px;
+		line-height: 77px;
+	}
 }
 
 .promo__body {
@@ -34,7 +52,14 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: auto 84px;
+	align-items: center;
+	justify-content: center;
 	gap: 30px;
+
+	@include tablet {
+		grid-template-columns: auto;
+		grid-template-rows: repeat(3, auto);
+	}
 }
 
 .promo__img {
@@ -47,6 +72,10 @@
 	border-radius: var(--radius);
 	overflow: hidden;
 
+	@include tablet {
+		grid-row: span 1;
+	}
+
 	&--small {
 		grid-row: span 1;
 	}
@@ -54,4 +83,11 @@
 
 .promo__btn {
 	grid-row: span 1;
+
+	@include tablet {
+		margin: 0 auto;
+
+		width: 340px;
+		height: 65px;
+	}
 }

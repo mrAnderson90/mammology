@@ -5,15 +5,30 @@
 	&--small {
 		width: 53px;
 		height: 53px;
+
+		@include tablet {
+			width: 44px;
+			height: 44px;
+		}
 	}
 
 	&--medium {
 		width: 71px;
 		height: 71px;
+
+		@include tablet {
+			width: 57px;
+			height: 57px;
+		}
 	}
 
 	&--large {
 		width: 76px;
 		height: 76px;
+
+		@include tablet {
+			width: 60px;
+			height: 60px;
+		}
 	}
 }

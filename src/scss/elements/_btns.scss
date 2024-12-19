@@ -1,7 +1,7 @@
 .btn,
 a.btn {
 	display: inline-block;
-	padding: 32px 39px;
+	padding: 28px 39px;
 	border-radius: var(--radius);
 
 	display: flex;
@@ -19,6 +19,11 @@ a.btn {
 	opacity: 1;
 	transition: all 0.2s ease-in-out;
 
+	@include tablet {
+		padding: 24px 39px;
+		font-size: 13px;
+	}
+
 	&--primary {
 		background-color: var(--primary-dark);
 
@@ -32,11 +37,28 @@ a.btn {
 			transform: translateY(-2px);
 			transition: all 0.2s ease-in-out;
 		}
+
+		&::after {
+			content: "";
+
+			display: block;
+			height: 28px;
+			width: 15px;
+
+			background-image: url('../img/icons/arrow-up-right.svg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+
+			@include tablet {
+				height: 21px;
+
+			}
+		}
 	}
 
 	&--wide {
 		width: 100%;
 		height: 100%;
-		padding: 32px 39px;
 	}
 }

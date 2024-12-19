@@ -8,8 +8,12 @@ section.promo#promo
 	.container
 		.promo__body
 			.promo__img
-				img(src="img/promo/promo-lg-01.jpg", alt="lection-1")
+				picture
+					source(srcset="img/promo/promo-md-01.jpg", media="(max-width: 1250px)")
+					img(src="img/promo/promo-lg-01.jpg", alt="lection-1")
 			.promo__img.promo__img--small
-				img(src="img/promo/promo-lg-02.jpg", alt="lection-2")
+				picture
+					source(srcset="img/promo/promo-md-02.jpg", media="(max-width: 1250px)")
+					img(src="img/promo/promo-lg-02.jpg", alt="lection-2")
 			.promo__btn
 				a(href="#!").btn.btn--primary.btn--wide Записаться онлайн

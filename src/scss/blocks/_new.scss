@@ -1,16 +1,28 @@
 .new {
+	flex: 1;
 	max-width: 380px;
 }
+
 .new__header {
 	margin-bottom: 30px;
 	position: relative;
 
 	border-radius: var(--radius);
 	border: var(--standart-bd) ;
+
+	@include tablet {
+		margin-bottom: 20px;
+	}
 }
+
 .new__foto {
-	width: 380px;
-	height: 380px;
+	width: 376px;
+	height: 376px;
+
+	@include tablet {
+		width: 355px;
+		height: 355px;
+	}
 }
 
 .new__date {
@@ -24,6 +36,16 @@
 	border-radius: var(--radius);
 
 	background-color: var(--white);
+
+	font-size: 16px;
+
+	@include tablet {
+		bottom: 15px;
+		right: 15px;
+		padding: 6px 18px;
+
+		font-size: 12px;
+	}
 }
 .new__content {
 	margin-bottom: 10px;
