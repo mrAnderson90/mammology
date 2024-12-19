@@ -1,20 +1,23 @@
 .promo {}
 
 .promo__header {
+	padding: 25px 0;
+	display: flex;
+	align-items: center;
 	background-color: var(--primary);
-	padding-top: 25px;
-	padding-bottom: 38px;
 }
 
 .promo__title {
 	font-family: var(--second-family);
 	font-size: 40px;
+	
 	color: var(--white);
 }
 
 .promo__title-span--small {
 	display: block;
 	margin-left: 120px;
+	line-height: 100%;
 }
 
 .promo__title-span--large {
@@ -36,12 +39,19 @@
 
 .promo__img {
 	grid-row: span 2;
-}
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-.promo__img--small {
-	grid-row: span 1;
+	border: 2px solid var(--primary-dark);
+	border-radius: var(--radius);
+	overflow: hidden;
+
+	&--small {
+		grid-row: span 1;
+	}
 }
 
 .promo__btn {
-	
+	grid-row: span 1;
 }

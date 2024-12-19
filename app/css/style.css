@@ -146,20 +146,6 @@ body {
   }
 }
 
-.main {
-  margin-bottom: 50px;
-}
-@media (max-width: 1250px) {
-  .main {
-    margin-bottom: 40px;
-  }
-}
-@media (max-width: 788px) {
-  .main {
-    margin-bottom: 30px;
-  }
-}
-
 .header {
   padding: 30px 0;
 }
@@ -183,6 +169,11 @@ a.header__logo {
   align-items: center;
   column-gap: 30px;
 }
+@media (max-width: 1250px) {
+  .main-nav__list {
+    column-gap: 15px;
+  }
+}
 
 .main-nav__link,
 a.main-nav__link {
@@ -197,6 +188,13 @@ a.main-nav__link {
   color: var(--black);
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 1250px) {
+  .main-nav__link,
+  a.main-nav__link {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}
 .main-nav__link:hover,
 a.main-nav__link:hover {
   color: var(--primary);
@@ -209,9 +207,10 @@ a.main-nav__link:active {
 }
 
 .promo__header {
+  padding: 25px 0;
+  display: flex;
+  align-items: center;
   background-color: var(--primary);
-  padding-top: 25px;
-  padding-bottom: 38px;
 }
 
 .promo__title {
@@ -223,6 +222,7 @@ a.main-nav__link:active {
 .promo__title-span--small {
   display: block;
   margin-left: 120px;
+  line-height: 100%;
 }
 
 .promo__title-span--large {
@@ -243,9 +243,18 @@ a.main-nav__link:active {
 
 .promo__img {
   grid-row: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--primary-dark);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.promo__img--small {
+  grid-row: span 1;
 }
 
-.promo__img--small {
+.promo__btn {
   grid-row: span 1;
 }
 
@@ -289,7 +298,6 @@ a.main-nav__link:active {
 }
 .about__text p {
   max-width: 60%;
-  text-align: justify;
 }
 
 .about__arrow {
@@ -415,9 +423,9 @@ a.main-nav__link:active {
   bottom: 20px;
   right: 20px;
   padding: 9px 22px;
+  border: 2px solid var(--primary-dark);
   border-radius: var(--radius);
-  background-color: var(--primary);
-  color: var(--white);
+  background-color: var(--white);
 }
 
 .new__content {
@@ -482,7 +490,7 @@ a.new__link:active {
 }
 
 .statistics__content {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   color: var(--white);
 }
 
@@ -534,8 +542,8 @@ a.new__link:active {
 
 .prevention__decor {
   position: absolute;
-  top: 0;
-  left: 20%;
+  top: 20%;
+  left: 30%;
   transform: scaleX(-1);
 }
 
@@ -552,6 +560,7 @@ a.new__link:active {
   min-width: 106px;
   padding: 20px;
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: flex-start;
   column-gap: 10px;
@@ -573,6 +582,7 @@ a.new__link:active {
   line-height: 100%;
   font-family: var(--second-family);
   color: var(--primary-dark);
+  text-align: center;
 }
 
 .prevention__step {
@@ -595,7 +605,8 @@ a.new__link:active {
 }
 
 .symptoms__title {
-  display: inline-block;
+  align-self: start;
+  padding-bottom: 11px;
   border-bottom: 2px solid var(--primary-dark);
 }
 
@@ -612,7 +623,6 @@ a.new__link:active {
 
 .symptoms__subtitle {
   margin-bottom: 30px;
-  font-family: var(--second-family);
 }
 
 .symptoms__cards {
@@ -791,9 +801,9 @@ a.partners__link:active .partners__name {
 
 .footer__phones {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 .footer__contacts {
@@ -801,8 +811,7 @@ a.partners__link:active .partners__name {
 }
 
 .footer__designer {
-  margin-top: 80px;
-  margin-bottom: 48px;
+  margin: 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -821,6 +830,7 @@ a.partners__link:active .partners__name {
 .designer__link,
 a.designer__link {
   border-bottom: 1px solid var(--primary-dark);
+  color: var(--primary-dark);
   transition: all 0.2s ease-in-out;
 }
 .designer__link:hover,
@@ -967,6 +977,7 @@ a.btn--wide {
 .person__img {
   grid-row: span 3;
   border: var(--standart-bd);
+  border-radius: var(--radius);
 }
 
 .person__name {
@@ -1003,7 +1014,11 @@ a.social__link {
 }
 .social__link:hover,
 a.social__link:hover {
-  background-color: var(--gray);
+  opacity: 0.8;
   transition: all 0.2s ease-in-out;
+}
+
+a.social__link--tg img {
+  transform: translateX(-1px);
 }
 /*# sourceMappingURL=style.css.map */

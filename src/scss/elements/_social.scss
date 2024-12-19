@@ -25,7 +25,11 @@ a.social__link {
   transition: all .2s ease-in-out;
 
   &:hover {
-    background-color: var(--gray);
+    opacity: 0.8;
     transition: all .2s ease-in-out;
   }
+}
+
+a.social__link--tg img {
+  transform: translateX(-1px);
 }

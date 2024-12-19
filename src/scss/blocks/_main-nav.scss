@@ -4,6 +4,10 @@
 	display: flex;
 	align-items: center;
 	column-gap: 30px;
+
+	@include tablet {
+		column-gap: 15px;
+	}
 }
 
 .main-nav__item {
@@ -24,6 +28,11 @@ a.main-nav__link {
 	color: var(--black);
 
 	transition: all .3s ease-in-out;
+
+	@include tablet {
+		padding: 4px 8px;
+		font-size: 12px;
+	}
 
 	&:hover {
 		color: var(--primary);

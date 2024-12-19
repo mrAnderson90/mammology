@@ -10,7 +10,8 @@
 }
 
 .symptoms__title {
-	display: inline-block;
+	align-self: start;
+	padding-bottom: 11px;
 	border-bottom: 2px solid var(--primary-dark);
 }
 
@@ -29,8 +30,6 @@
 
 .symptoms__subtitle {
 	margin-bottom: 30px;
-
-	font-family: var(--second-family);
 }
 
 .symptoms__cards {
