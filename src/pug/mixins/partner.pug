@@ -3,6 +3,7 @@ mixin partner(name, imgPath)
 
   li.partners__item
     a.partners__link(href="#!")
-      img(src=path, alt="partner logo").partners__img
+      .partners__img
+        img(src=path, alt="partner logo")
       .partners__name
-        span= name
+          span= name

@@ -1,5 +1,11 @@
 .symptoms {
+	padding: 50px 0;
+
 	background-color: var(--primary);
+
+	@include tablet {
+		padding: 40px 0;
+	}
 }
 
 .symptoms__body {
@@ -15,21 +21,40 @@
 	border-bottom: 2px solid var(--primary-dark);
 }
 
-.symptoms__content {
+.symptoms__main {
 	flex-basis: 70%;
 
 	display: flex;
 	flex-direction: column;
 
 	color: var(--white);
+
+	@include tablet {
+		flex: 1;
+	}
 }
 
 .symptoms__info {
 	padding-bottom: 40px;
+
+	@include tablet {
+		max-width: 80%;
+	}
 }
 
 .symptoms__subtitle {
 	margin-bottom: 30px;
+
+	@include tablet {
+		max-width: 80%;
+	}
+}
+
+.symptoms__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 30px;
 }
 
 .symptoms__cards {
@@ -39,6 +64,16 @@
 	align-items: stretch;
 	flex-wrap: wrap;
 	gap: 30px;
+
+	@include tablet {
+		flex-basis: 50%;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-wrap: nowrap;
+		height: 100%;
+
+		margin-top: 0;
+	}
 }
 
 .symptoms__card {
@@ -61,6 +96,18 @@
 	justify-content: space-between;
 
 	gap: 32px;
+
+	@include tablet {
+		display: none;
+	}
+
+	&--md {
+		display: none;
+
+		@include tablet {
+			display: flex;
+		}
+	}
 }
 
 .symptoms__img {

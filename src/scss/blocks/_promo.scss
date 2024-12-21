@@ -9,6 +9,10 @@
 	@include tablet {
 		padding: 15px 0;
 	}
+
+	@include mobile {
+		padding: 7px 0;
+	}
 }
 
 .promo__title {
@@ -20,6 +24,10 @@
 	@include tablet {
 		font-size: 31px;
 	}
+
+	@include mobile {
+		font-size: 20px;
+	}
 }
 
 .promo__title-span--small {
@@ -29,6 +37,10 @@
 
 	@include tablet {
 		margin-left: 90px;
+	}
+
+	@include mobile {
+		margin-left: 38px;
 	}
 }
 
@@ -42,6 +54,12 @@
 		margin-top: -16px;
 		font-size: 77px;
 		line-height: 77px;
+	}
+
+	@include mobile {
+		margin-top: -8px;
+		font-size: 32px;
+		line-height: 32px;
 	}
 }
 
@@ -59,6 +77,11 @@
 	@include tablet {
 		grid-template-columns: auto;
 		grid-template-rows: repeat(3, auto);
+	}
+
+	@include mobile {
+		padding-top: 20px;
+		gap: 15px;
 	}
 }
 

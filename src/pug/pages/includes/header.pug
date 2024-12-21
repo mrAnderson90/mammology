@@ -2,7 +2,9 @@ header.header
 	.container
 		.header__row
 			a.header__logo(href="#!")
-				img(src="img/logo/logo-accent.png", alt="Logo").logo
+				picture
+					source(srcset="img/logo/logo-mobile.png", media="(max-width: 788px)")
+					img(src="img/logo/logo-accent.png", alt="Logo").logo
 			nav.main-nav
 				ul.main-nav__list
 					li.main-nav__item

@@ -3,21 +3,41 @@
 	grid-template-columns: 163px auto;
 	grid-template-rows: repeat(3, auto);
 	gap: 15px 30px;
+
+	@include tablet {
+		grid-template-columns: 112px auto;
+		gap: 7px 15px;
+	}
 }
 .person__img {
 	grid-row: span 3;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
 	border: var(--standart-bd);
 	border-radius: var(--radius);
 }
 .person__name {
 	grid-row: span 1;
+	padding-top: 17px;
 
 	font-family: var(--second-family);
 	font-weight: 300;
 	font-size: 26px;
 	line-height: 100%;
+
+	@include tablet {
+		padding-top: 12px;
+		font-size: 18px;
+	}
 }
 .person__post {
 	grid-row: span 1;
 	font-size: 16px;
+
+	@include tablet {
+		font-size: 12px;
+	}
 }

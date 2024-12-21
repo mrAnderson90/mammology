@@ -1,5 +1,11 @@
 .statistics {
+	padding: 50px 0;
+
 	background-color: var(--primary);
+
+	@include tablet {
+		padding: 40px 0;
+	}
 }
 
 .statistics__header {
@@ -35,11 +41,27 @@
 	font-weight: 300;
 	font-size: 40px;
 	color: var(--white);
+
+	@include tablet {
+		padding: 0 10px 10px 10px;
+
+		font-size: 25px;
+	}
+
+	@include mobile {
+		padding: 0 8px 8px 8px;
+
+		font-size: 13px;
+	}
 }
 
 .statistics__content {
 	margin-bottom: 40px;
 	color: var(--white);
+
+	@include tablet {
+		margin-bottom: 30px;
+	}
 }
 
 .statistics__cards {
@@ -47,11 +69,25 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: 30px;
+
+	@include tablet {
+		flex-wrap: wrap;
+	}
 }
 
 .statistics__card {
 	max-width: 380px;
 	height: 336px;
+
+	@include tablet {
+		margin: 0 auto;
+		max-width: 350px;
+		height: 232px;
+
+		&:last-child {
+			max-width: 416px;
+		}
+	}
 }
 
 .statistics__card-body {
@@ -70,6 +106,10 @@
 	font-size: 55px;
 	line-height: 140%;
 	color: var(--primary-dark);
+
+	@include tablet {
+		font-size: 40px;
+	}
 }
 
 .statistics__img {

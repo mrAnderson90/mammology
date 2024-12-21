@@ -15,6 +15,10 @@
 	column-gap: 64px;
 	width: 100%;
 
+	@include tablet {
+		column-gap: 16px;
+	}
+
 	&--reverse {
 		flex-direction: row-reverse;
 
@@ -29,11 +33,17 @@
 }
 
 .learning__content {
-	flex-basis: 50%;
+	flex-basis: 60%;
 }
 
 .learning__direction {
+	width: 110px;
+	// transform: scale(0.6);
 
+	&--sm {
+		width: 60px;
+		transform: translateY(10px) rotate(-10deg);
+	}
 }
 
 .learning__card {
@@ -41,5 +51,13 @@
 
 	p {
 		padding: 20px;
+	}
+
+	@include tablet {
+		max-width: 319px;
+
+		p {
+			padding: 15px;
+		}
 	}
 }

@@ -16,9 +16,18 @@
 	flex-direction: column;
 	justify-content: flex-start;
 	row-gap: 30px;
+
+	@include tablet {
+		flex-basis: 80%;
+	}
 }
 
 .agency__img {
+	width: 243px;
+
+	@include tablet {
+		width: 200px;
+	}
 }
 
 .agency__staff {
@@ -27,8 +36,17 @@
 	align-items: center;
 	flex-wrap: wrap;
 	gap: 30px;
+
+	@include tablet {
+		column-gap: 20px;
+	}
 }
 
 .agency__card {
 	flex-basis: 45%;
+
+	@include tablet {
+		flex-shrink: 1;
+		flex-grow: 1;
+	}
 }
