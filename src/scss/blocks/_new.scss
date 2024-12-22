@@ -75,6 +75,11 @@
 }
 .new__content {
 	margin-bottom: 10px;
+	min-height: 56px;
+
+	@include tablet {
+		min-height: 42px;
+	}
 }
 
 .new__link,

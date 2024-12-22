@@ -5,6 +5,9 @@
 @import 'base/base';
 @import 'base/container';
 
+// Swiper
+@import 'swiper/swiper-bundle.min';
+
 // Секции
 @import 'blocks/main';
 
@@ -32,5 +35,4 @@
 @import 'elements/heart';
 @import 'elements/person';
 @import 'elements/social';
-
-// Скрипты
+@import 'elements/swiper';

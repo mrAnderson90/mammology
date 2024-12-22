@@ -1,34 +1,25 @@
-console.log('test index.js');
-/* Мобильная навигация */
-const moileNavBtnOpen = document.querySelector('#openMobileNav');
-const moileNavBtnClose = document.querySelector('#closeMobileNav');
-const mobileNav = document.querySelector('.mobile-nav');
+const swiperParams = {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.news__control--next',
+    prevEl: '.news__control--prev',
+  },
+  pagination: {
+    el: '.news__dots',
+  },
+  breakpoints: {
+    // // when window width is >= 788px
+    788: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 1250px
+    1250: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+  }
+};
 
-// Слушаем события
-moileNavBtnOpen.addEventListener('click', function() {
-	mobileNav.classList.add('mobile-nav--open');
-
-	// Убираем скролл для body
-	document.body.classList.add('no-scroll');
-});
-
-moileNavBtnClose.addEventListener('click', function() {
-	mobileNav.classList.remove('mobile-nav--open');
-
-		// Удаляем no-scroll для body
-	document.body.classList.remove('no-scroll');
-});
-
-/* Закрыть мобильную навигацию по клику по ссылкам внутри ммобильной навигации */
-
-// Находим ссылки внутри блока с мобильной навигацией
-const mobileNavLinks = mobileNav.querySelectorAll("a, button");
-
-mobileNavLinks.forEach(function(item) {
-	item.addEventListener('click', function() {
-		mobileNav.classList.remove('mobile-nav--open');
-
-		// Удаляем no-scroll для body
-		document.body.classList.remove('no-scroll');
-	});
-});
+const swiper = new Swiper('.swiper', swiperParams);

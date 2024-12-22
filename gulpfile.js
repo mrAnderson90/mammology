@@ -54,8 +54,7 @@ function styles() {
 }
 
 function scripts() {
-	return src(['src/js/**/*.*'])
-		.pipe(concat('index.js'))
+	return src(['src/js/**/*.*'], { base: 'src/js' })
 		.pipe(dest('app/js'))
 		.pipe(browserSync.stream());
 }

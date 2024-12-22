@@ -3,14 +3,15 @@ mixin news-article(id, date, title, imgLgPath, imgSmPath)
 		//- const imgPath = `img/news/article-image-${id}.jpg`;
 		const imgAlt = `Article ${id}`;
 
-	article.new
-		.new__header
-			.new__img
-				picture
-					source(srcset=imgSmPath, media="(max-width: 788px)")
-					img(src=imgLgPath, alt=imgLgPath)
-			.new__date 
-				p= date
-		.new__content
-			p= title
-		a(href="#!").new__link Читать полностью
+	.swiper-slide
+		article.new
+			.new__header
+				.new__img
+					picture
+						source(srcset=imgSmPath, media="(max-width: 788px)")
+						img(src=imgLgPath, alt=imgLgPath)
+				.new__date 
+					p= date
+			.new__content
+				p= title
+			a(href="#!").new__link Читать полностью

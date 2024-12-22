@@ -108,29 +108,84 @@
         <div class="container"> 
           <h2 class="news__title title">Новости нашей&nbsp;школы</h2>
           <div class="news__slider">
-            <article class="new">
-              <div class="new__header">
-                <div class="new__img">
-                  <picture>
-                    <source srcset="img/news/article-image-sm-01.jpg" media="(max-width: 788px)"/><img src="img/news/article-image-01.jpg" alt="img/news/article-image-01.jpg"/>
-                  </picture>
+            <div class="swiper">
+              <div class="swiper-wrapper news__wrapper">
+                <div class="swiper-slide">
+                  <article class="new">
+                    <div class="new__header">
+                      <div class="new__img">
+                        <picture>
+                          <source srcset="img/news/article-image-sm-01.jpg" media="(max-width: 788px)"/><img src="img/news/article-image-01.jpg" alt="img/news/article-image-01.jpg"/>
+                        </picture>
+                      </div>
+                      <div class="new__date"> 
+                        <p>18.11.2024</p>
+                      </div>
+                    </div>
+                    <div class="new__content">
+                      <p>Приглашаем вас 23 ноября в 12:00 на особенное мероприятие</p>
+                    </div><a class="new__link" href="#!">Читать полностью</a>
+                  </article>
                 </div>
-                <div class="new__date"> 
-                  <p>18.11.2024</p>
+                <div class="swiper-slide">
+                  <article class="new">
+                    <div class="new__header">
+                      <div class="new__img">
+                        <picture>
+                          <source srcset="img/news/article-image-sm-02.jpg" media="(max-width: 788px)"/><img src="img/news/article-image-02.jpg" alt="img/news/article-image-02.jpg"/>
+                        </picture>
+                      </div>
+                      <div class="new__date"> 
+                        <p>13.11.2024</p>
+                      </div>
+                    </div>
+                    <div class="new__content">
+                      <p>Продолжаем посещать различные учреждения области</p>
+                    </div><a class="new__link" href="#!">Читать полностью</a>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="new">
+                    <div class="new__header">
+                      <div class="new__img">
+                        <picture>
+                          <source srcset="img/news/article-image-sm-03.jpg" media="(max-width: 788px)"/><img src="img/news/article-image-03.jpg" alt="img/news/article-image-03.jpg"/>
+                        </picture>
+                      </div>
+                      <div class="new__date"> 
+                        <p>11.10.2024</p>
+                      </div>
+                    </div>
+                    <div class="new__content">
+                      <p>Наши волонтеры посетили медицинский колледж НИУ «БелГУ»</p>
+                    </div><a class="new__link" href="#!">Читать полностью</a>
+                  </article>
+                </div>
+                <div class="swiper-slide">
+                  <article class="new">
+                    <div class="new__header">
+                      <div class="new__img">
+                        <picture>
+                          <source srcset="img/news/article-image-sm-04.jpg" media="(max-width: 788px)"/><img src="img/news/article-image-04.jpg" alt="img/news/article-image-04.jpg"/>
+                        </picture>
+                      </div>
+                      <div class="new__date"> 
+                        <p>26.09.2024</p>
+                      </div>
+                    </div>
+                    <div class="new__content">
+                      <p>Школа Маммологии на Таврида.Арт</p>
+                    </div><a class="new__link" href="#!">Читать полностью</a>
+                  </article>
                 </div>
               </div>
-              <div class="new__content">
-                <p>Приглашаем вас 23 ноября в 12:00 на особенное мероприятие</p>
-              </div><a class="new__link" href="#!">Читать полностью</a>
-            </article>
+              <div class="news__controls">
+                <div class="news__control news__control--prev"></div>
+                <div class="news__dots"></div>
+                <div class="news__control news__control--next"></div>
+              </div>
+            </div>
           </div>
-          <ul class="news__dots">
-            <li class="news__dot active"></li>
-            <li class="news__dot"></li>
-            <li class="news__dot"></li>
-            <li class="news__dot"></li>
-            <li class="news__dot"></li>
-          </ul>
         </div>
       </section>
       <section class="section statistics" id="statistics">
@@ -428,6 +483,8 @@
         <div class="footer__rules"><a href="#!">Политика конфиденциальности</a></div>
       </div>
     </footer>
+    <script src="js/modules/mobile-nav.js"></script>
+    <script src="js/modules/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
