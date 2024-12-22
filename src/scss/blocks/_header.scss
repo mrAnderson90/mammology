@@ -20,6 +20,10 @@
 a.header__logo {
 	display: block;
 	width: 78px;
+
+	@include mobile {
+		width: 120px;
+	}
 }
 
 .header__nav-btn {

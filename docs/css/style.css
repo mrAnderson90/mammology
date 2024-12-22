@@ -2233,6 +2233,12 @@ a.header__logo {
   display: block;
   width: 78px;
 }
+@media (max-width: 788px) {
+  .header__logo,
+  a.header__logo {
+    width: 120px;
+  }
+}
 
 .header__nav-btn {
   padding: 2px;
@@ -4152,9 +4158,6 @@ a.social__link--tg img {
   display: none;
   position: relative;
   width: 768px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: transparent;
   color: #000;
 }
