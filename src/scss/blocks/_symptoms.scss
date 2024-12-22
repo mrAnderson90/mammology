@@ -19,6 +19,11 @@
 	align-self: start;
 	padding-bottom: 11px;
 	border-bottom: 2px solid var(--primary-dark);
+
+	@include mobile {
+		padding-bottom: 4px;
+		border-width: 1px;
+	}
 }
 
 .symptoms__main {
@@ -35,10 +40,16 @@
 }
 
 .symptoms__info {
-	padding-bottom: 40px;
+	margin-bottom: 40px;
 
 	@include tablet {
 		max-width: 80%;
+		margin-bottom: 30px;
+	}
+
+	@include mobile {
+		max-width: 90%;
+		margin-bottom: 20px;
 	}
 }
 
@@ -48,6 +59,11 @@
 	@include tablet {
 		max-width: 80%;
 	}
+
+	@include mobile {
+		max-width: 90%;
+		margin-bottom: 20px;
+	}
 }
 
 .symptoms__content {
@@ -55,6 +71,11 @@
 	justify-content: space-between;
 	align-items: flex-start;
 	gap: 30px;
+
+	@include mobile {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 .symptoms__cards {
@@ -85,6 +106,10 @@
 
 	font-size: 16px;
 	color: var(--black);
+
+	@include mobile {
+		font-size: 14px;
+	}
 }
 
 .symptoms__materials {
@@ -116,6 +141,10 @@
 	background-color: var(--white);
 	border: var(--standart-bd) ;
 	border-radius: var(--radius);
+
+	@include mobile {
+		max-width: 201px;
+	}
 }
 .symptoms__btn {
 	width: 100%;

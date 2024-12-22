@@ -1,4 +1,8 @@
 .prevention {
+	background-image: url('../img/background/bg-04.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .prevention__title {
@@ -15,8 +19,16 @@
 
 	margin-bottom: 40px;
 
+	@include mobile {
+		margin-bottom: 20px;
+	}
+
 	p {
 		max-width: 50%;
+
+		@include mobile {
+			max-width: 100%;
+		}
 	}
 }
 
@@ -30,6 +42,12 @@
 		top: 15%;
 		left: 20%;
 	}
+
+	@include mobile {
+		width: 0;
+		height: 0;
+		opacity: 0;
+	}
 }
 
 .prevention__cards {
@@ -41,6 +59,11 @@
 
 	@include tablet {
 		gap: 20px;
+	}
+
+	@include mobile {
+		flex-wrap: nowrap;
+		flex-direction: column;
 	}
 }
 
@@ -98,5 +121,9 @@
 
 	@include tablet {
 		font-size: 21px;
+	}
+
+	@include mobile {
+		font-size: 18px;
 	}
 }

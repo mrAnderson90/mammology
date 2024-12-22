@@ -1,4 +1,9 @@
-.promo {}
+.promo {
+	background-image: url('../img/background/bg-01.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
 
 .promo__header {
 	padding: 25px 0;

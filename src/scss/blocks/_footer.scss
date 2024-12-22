@@ -41,6 +41,10 @@
     font-size: 21px;
     text-align: center;
   }
+
+  @include mobile {
+    font-size: 16px;
+  }
 }
 
 .footer__phones {
@@ -57,6 +61,12 @@
     justify-content: space-between;
     gap: 30px;
     font-size: 17px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    row-gap: 4px;
+    font-size: 13px;
   }
 }
 
@@ -87,6 +97,10 @@
 
   @include tablet {
     font-size: 27px;
+  }
+
+  @include mobile {
+    font-size: 24px;
   }
 }
 

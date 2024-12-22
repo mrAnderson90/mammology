@@ -8,6 +8,11 @@
 		grid-template-columns: 112px auto;
 		gap: 7px 15px;
 	}
+
+	@include mobile {
+		grid-template-columns: 100px auto;
+		gap: 7px 10px;
+	}
 }
 .person__img {
 	grid-row: span 3;
@@ -32,6 +37,10 @@
 		padding-top: 12px;
 		font-size: 18px;
 	}
+
+	@include mobile {
+		font-size: 14px;
+	}
 }
 .person__post {
 	grid-row: span 1;
@@ -39,5 +48,9 @@
 
 	@include tablet {
 		font-size: 12px;
+	}
+
+	@include mobile {
+		font-size: 10px;
 	}
 }

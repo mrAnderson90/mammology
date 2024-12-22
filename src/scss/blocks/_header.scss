@@ -10,12 +10,37 @@
 	align-items: center;
 	justify-content: center;
 	column-gap: 32px;
+
+	@include mobile {
+		justify-content: space-between;
+	}
 }
 
 .header__logo,
 a.header__logo {
 	display: block;
 	width: 78px;
+}
+
+.header__nav-btn {
+	padding: 2px;
+	border: 1px solid var(--white);
+	border-radius: var(--radius);
+
+  display: none;
+
+	transition: all .2s ease-in-out;
+
+	@include mobile {
+		display: block;
+	}
+
+	&:focus,
+	&:active {
+		border: 1px solid var(--gray);
+		box-shadow: 2px 2px 4px 0px rgba(34, 60, 80, 0.2);
+		transition: all .2s ease-in-out;
+	}
 }
 
 .logo {

@@ -22,6 +22,16 @@
 			"border: 2px solid var(--primary-dark);"
 		],
 		"description": "Add border"
+	},
+	"background image": {
+		"prefix": "bacimg",
+		"body": [
+			"background-image: url('../img/background/$1');",
+			"background-size: cover;",
+			"background-repeat: no-repeat;",
+			"background-position: center;"
+		],
+		"description": "background image"
 	}
 
 }

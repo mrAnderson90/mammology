@@ -3,17 +3,23 @@
 		{
 			id: 1,
 			date: '18.11.2024',
-			title: 'Приглашаем вас 23 ноября в 12:00 на особенное мероприятие'
+			title: 'Приглашаем вас 23 ноября в 12:00 на особенное мероприятие',
+			imgLgPath: 'img/news/article-image-01.jpg',
+			imgSmPath: 'img/news/article-image-sm-01.jpg'
 		},
-		{
-			id: 2,
-			date: '13.11.2024',
-			title: 'Продолжаем посещать различные учреждения области'
-		},
+		//- {
+		//- 	id: 2,
+		//- 	date: '13.11.2024',
+		//- 	title: 'Продолжаем посещать различные учреждения области',
+		//-   imgLgPath: 'img/news/article-image-02.jpg',
+		//- 	imgSmPath: 'img/news/article-image-sm-02.jpg'
+		//- },
 		//- {
 		//- 	id: 3,
 		//- 	date: '11.10.2024',
-		//- 	title: 'Наши волонтеры посетили медицинский колледж НИУ «БелГУ»'
+		//- 	title: 'Наши волонтеры посетили медицинский колледж НИУ «БелГУ»',
+		//-   imgLgPath: 'img/news/article-image-03.jpg',
+		//- 	imgSmPath: 'img/news/article-image-sm-03.jpg'
 		//- }
 	];
 
@@ -21,8 +27,8 @@ section.section.news#news
 	.container 
 		h2.news__title.title Новости нашей&nbsp;школы
 		.news__slider
-			each artile in news
-				+news-article(artile.id, artile.date, artile.title)
+			each article in news
+				+news-article(article.id, article.date, article.title, article.imgLgPath, article.imgSmPath)
 		ul.news__dots
 			- for (var i = 0; i < 5; i++)
 					if i === 0
