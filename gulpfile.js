@@ -28,11 +28,11 @@ function pages() {
 }
 
 function images() {
-	return src(['src/img/**/*.*', '!src/img/src/*.svg'], { base: 'src/img' })
+	return src(['src/img/**/*.*', '!src/img/**/*.svg', '!src/img/**/*.ico'], { base: 'src/img' })
 		.pipe(newer('app/img'))
 		.pipe(avif({ quality: 50 }))
 
-		.pipe(src(['src/img/**/*.*']), { base: 'src/img' })
+		.pipe(src(['src/img/**/*.*', '!src/img/**/*.ico']), { base: 'src/img' })
 		.pipe(newer('app/img'))
 		.pipe(webp())
 
