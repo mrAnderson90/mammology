@@ -1,6 +1,7 @@
 include ../mixins/news-article.pug
 include ../mixins/person.pug
 include ../mixins/partner.pug
+include ../mixins/article-modal.pug
 
 doctype html
 html(lang="ru")
@@ -26,7 +27,9 @@ html(lang="ru")
 			include includes/partners
 
 		include includes/footer
+		include includes/news-modal.pug
 
 		script(src="js/modules/mobile-nav.js")
 		script(src="js/modules/swiper-bundle.min.js")
+		script(src="js/modules/fancybox.umd.js")
 		script(src="js/index.js")

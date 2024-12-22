@@ -1,3 +1,4 @@
+// Swiper
 const swiperParams = {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -23,3 +24,9 @@ const swiperParams = {
 };
 
 const swiper = new Swiper('.swiper', swiperParams);
+
+// FancyBox
+Fancybox.bind('[data-fancybox]', {
+	// Your custom options
+  closeButton: false,
+});

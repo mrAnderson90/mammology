@@ -1,0 +1,7 @@
+mixin article-modal(id, title)
+  section.news-modal(id=id)
+    .news-modal__body
+      h3.news-modal__title !{title}
+      .news-modal__content
+        block
+      button.news-modal__close(data-fancybox-close)
