@@ -2,7 +2,7 @@
 	display: none;
 
 	position: relative;
-	width: 768px;
+	width: 758px;
 
 	background-color: transparent;
 	color: #000;
@@ -13,6 +13,7 @@
 
 	@include mobile {
 		max-width: calc(100% - 30px);
+    
 	}
 }
 
@@ -24,6 +25,11 @@
   background-color: #fff;
   color: #2f2f2f;
   transition: all 0.2s ease-in;
+
+  @include mobile {
+    max-height: 600px;
+    overflow-y: scroll;
+  }
 }
 
 .news-modal__title {

@@ -26,7 +26,11 @@
 	width: 100%;
 
 	@include tablet {
-		column-gap: 16px;
+		column-gap: 32px;
+	}
+
+	@include mobile {
+		column-gap: 12px;
 	}
 
 	&--reverse {
@@ -50,40 +54,36 @@
 	flex-basis: 60%;
 
 	@include mobile {
-		flex-basis: 90%;
+		flex-basis: 80%;
+		// max-width: 265px;
 	}
 }
 
 .learning__direction {
-	width: 110px;
-	// transform: scale(0.6);
+	flex-basis: 40%;
 
-	@include mobile {
-		position: absolute;
-		width: 50px;
-		// transform: translateY(10px) rotate(-10deg);
-
-		&--1 {
-			right: 0;
-			bottom: -16px;
-		}
-
-		&--2 {
-			left: 0;
-			bottom: -16px;
-		}
-
-		&--3 {
-			right: -16px;
-			bottom: -16px;
-		}
+	&--2 {
+		transform: scaleX(-1);
 	}
 
 	&--sm {
-		width: 60px;
-		transform: translateY(10px) rotate(-10deg);
+		transform: translateX(20px) scaleX(-1);
+	}
 
-		@include mobile {
+	@include tablet {
+		&--sm {
+			transform: translateY(12px) scaleX(-1);
+		}
+	}
+
+	@include mobile {
+		flex-basis: 10%;
+
+		&--2 {
+			transform: scaleX(1);
+		}
+
+		&--sm {
 			display: none;
 		}
 	}

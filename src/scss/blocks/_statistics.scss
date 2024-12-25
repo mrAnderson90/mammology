@@ -1,10 +1,7 @@
 .statistics {
-	padding: 50px 0;
-
 	background-color: var(--primary);
 
 	@include tablet {
-		padding: 40px 0;
 	}
 }
 
@@ -116,8 +113,11 @@
 }
 
 .statistics__card-content {
+	margin-bottom: 5px;
+
 	@include mobile {
 		max-width: 200px;
+		margin-bottom: 10px;
 	}
 }
 
@@ -143,6 +143,21 @@
 	right: 5px;
 
 	@include mobile {
-		right: 0;
+
+		&--cancerous {
+			width: 145px;
+			bottom: 10%;
+		}
+
+		&--skeleton {
+			width: 105px;
+		}
+
+		&--map {
+			width: 155px;
+			bottom: 50%;
+			right: 10px;
+			transform: translateY(50%) rotate(-25deg);
+		}
 	}
 }

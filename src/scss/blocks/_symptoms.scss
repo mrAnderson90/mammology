@@ -118,12 +118,13 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-start;
 
 	gap: 32px;
 
 	@include tablet {
 		display: none;
+		gap: 20px;
 	}
 
 	&--md {

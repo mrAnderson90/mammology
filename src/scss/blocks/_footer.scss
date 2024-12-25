@@ -1,8 +1,16 @@
 .footer {
-  padding-top: 51px;
+  padding-top: 50px;
   padding-bottom: 20px;
   background-color: var(--primary);
   color: #fff;
+
+  @include tablet {
+    padding-top: 32px;
+  }
+
+  @include mobile {
+    padding-top: 24px;
+  }
 }
 
 .footer__info {

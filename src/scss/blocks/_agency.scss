@@ -34,6 +34,18 @@
 		flex: 1;
 		row-gap: 20px;
 	}
+
+	p:first-child {
+		max-width: 540px;
+
+		@include tablet {
+			max-width: 400px;
+		}
+
+		@include mobile {
+			max-width: 290px;
+		}
+	}
 }
 
 .agency__img {

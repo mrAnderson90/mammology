@@ -2,6 +2,11 @@
 	flex: 1;
 	max-width: 380px;
 
+	display: flex;
+	flex-direction: column;
+	justify-content: stretch;
+	align-items: flex-start;
+
 	@include tablet {
 		max-width: 359px;
 	}
@@ -73,6 +78,7 @@
 		font-size: 10px;
 	}
 }
+
 .new__content {
 	margin-bottom: 10px;
 	min-height: 56px;
@@ -80,10 +86,15 @@
 	@include tablet {
 		min-height: 42px;
 	}
+
+	@include mobile {
+		min-height: unset;
+	}
 }
 
 .new__link,
 a.new__link {
+	margin-top: auto;
 	font-family: var(--font-family);
 	font-size: 16px;
 	line-height: 140%;
