@@ -1,11 +1,5 @@
 .symptoms {
-	padding: 50px 0;
-
 	background-color: var(--primary);
-
-	@include tablet {
-		padding: 40px 0;
-	}
 }
 
 .symptoms__body {
@@ -41,9 +35,10 @@
 
 .symptoms__info {
 	margin-bottom: 40px;
+	max-width: 500px;
 
 	@include tablet {
-		max-width: 80%;
+		max-width: 65%;
 		margin-bottom: 30px;
 	}
 
@@ -55,6 +50,7 @@
 
 .symptoms__subtitle {
 	margin-bottom: 30px;
+	max-width: 80%;
 
 	@include tablet {
 		max-width: 80%;
@@ -63,6 +59,14 @@
 	@include mobile {
 		max-width: 90%;
 		margin-bottom: 20px;
+	}
+
+	span {
+		display: block;
+
+		@include mobile {
+			display: inline;
+		}
 	}
 }
 
@@ -109,6 +113,14 @@
 
 	@include mobile {
 		font-size: 14px;
+	}
+
+	span {
+		display: block;
+
+		@include mobile {
+			display: inline;
+		}
 	}
 }
 

@@ -2571,7 +2571,7 @@ a.main-nav__link:active {
 }
 @media (max-width: 1250px) {
   .about__content {
-    row-gap: 30px;
+    row-gap: 74px;
   }
 }
 @media (max-width: 788px) {
@@ -2592,13 +2592,23 @@ a.main-nav__link:active {
   justify-content: flex-end;
 }
 .about__text p {
-  flex-basis: 60%;
+  flex-basis: 70%;
 }
 @media (max-width: 788px) {
   .about__text p {
     flex-basis: 90%;
     flex-grow: 1;
     flex-shrink: 1;
+  }
+}
+@media (max-width: 1250px) {
+  .about__text span {
+    display: block;
+  }
+}
+@media (max-width: 788px) {
+  .about__text span {
+    display: inline;
   }
 }
 
@@ -2611,8 +2621,8 @@ a.main-nav__link:active {
 }
 @media (max-width: 1250px) {
   .about__arrow {
-    top: -15px;
-    width: 95px;
+    top: -35px;
+    left: 20%;
     transform: translateX(-50%) rotate(10deg);
   }
 }
@@ -3017,6 +3027,12 @@ a.new__link:active {
 .statistics {
   background-color: var(--primary);
 }
+@media (max-width: 788px) {
+  .statistics {
+    padding-bottom: 30px;
+  }
+}
+
 .statistics__header {
   margin-bottom: 18px;
   display: grid;
@@ -3306,13 +3322,7 @@ a.new__link:active {
 }
 
 .symptoms {
-  padding: 50px 0;
   background-color: var(--primary);
-}
-@media (max-width: 1250px) {
-  .symptoms {
-    padding: 40px 0;
-  }
 }
 
 .symptoms__body {
@@ -3348,10 +3358,11 @@ a.new__link:active {
 
 .symptoms__info {
   margin-bottom: 40px;
+  max-width: 500px;
 }
 @media (max-width: 1250px) {
   .symptoms__info {
-    max-width: 80%;
+    max-width: 65%;
     margin-bottom: 30px;
   }
 }
@@ -3364,6 +3375,7 @@ a.new__link:active {
 
 .symptoms__subtitle {
   margin-bottom: 30px;
+  max-width: 80%;
 }
 @media (max-width: 1250px) {
   .symptoms__subtitle {
@@ -3374,6 +3386,14 @@ a.new__link:active {
   .symptoms__subtitle {
     max-width: 90%;
     margin-bottom: 20px;
+  }
+}
+.symptoms__subtitle span {
+  display: block;
+}
+@media (max-width: 788px) {
+  .symptoms__subtitle span {
+    display: inline;
   }
 }
 
@@ -3420,6 +3440,14 @@ a.new__link:active {
 @media (max-width: 788px) {
   .symptom {
     font-size: 14px;
+  }
+}
+.symptom span {
+  display: block;
+}
+@media (max-width: 788px) {
+  .symptom span {
+    display: inline;
   }
 }
 

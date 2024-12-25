@@ -1,7 +1,8 @@
 .statistics {
 	background-color: var(--primary);
 
-	@include tablet {
+	@include mobile {
+		padding-bottom: 30px;
 	}
 }
 

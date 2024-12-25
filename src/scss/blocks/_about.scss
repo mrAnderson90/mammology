@@ -49,7 +49,7 @@
 	row-gap: 35px;
 
 	@include tablet {
-		row-gap: 30px;
+		row-gap: 74px;
 	}
 
 	@include mobile {
@@ -70,12 +70,22 @@
 	}
 
 	p {
-		flex-basis: 60%;
+		flex-basis: 70%;
 
 		@include mobile {
 			flex-basis: 90%;
 			flex-grow: 1;
 			flex-shrink: 1;
+		}
+	}
+
+	span {
+		@include tablet {
+			display: block;
+		}
+
+		@include mobile {
+			display: inline;
 		}
 	}
 }
@@ -89,8 +99,8 @@
 	transform: translateX(-50%);
 
 	@include tablet {
-		top: -15px;
-		width: 95px;
+		top: -35px;
+		left: 20%;
 		transform: translateX(-50%) rotate(10deg);
 	}
 

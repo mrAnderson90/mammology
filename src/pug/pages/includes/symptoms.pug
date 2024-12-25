@@ -1,7 +1,7 @@
 -
 	const symptoms = [
 		'Выраженная ассиметрия молочных&nbsp;желез',
-		'Наличие<br>уплотнений',
+		'<span>Наличие </span><span>уплотнений</span>',
 		'Изменение состояния кожи&nbsp;и&nbsp;сосков',
 		'Наличие болезненности, покраснений, синяков',
 		'Наличие патологических выделений',
@@ -12,8 +12,10 @@ section.section.symptoms#symptoms
 		.symptoms__body 
 			.symptoms__main
 				h2.symptoms__title.title.title--light Симптомы
-				p.symptoms__info Помимо регулярных профилактических осмотров,#[br]маммографию можно пройти по&nbsp;симптоматическим показаниям.
-				h3.symptoms__subtitle Если вы&nbsp;наблюдаете у&nbsp;себя эти симптомы,#[br]то&nbsp;необходимо записаться на&nbsp;прием к&nbsp;гинекологу или маммологу:
+				p.symptoms__info Помимо регулярных профилактических осмотров, маммографию можно пройти по&nbsp;симптоматическим показаниям.
+				h3.symptoms__subtitle
+					span Если вы&nbsp;наблюдаете у&nbsp;себя эти симптомы, 
+					span то&nbsp;необходимо записаться на&nbsp;прием к&nbsp;гинекологу&nbsp;или&nbsp;маммологу:
 				.symptoms__content
 					ul.symptoms__cards
 						each item in symptoms
