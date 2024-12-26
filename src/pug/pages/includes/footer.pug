@@ -2,7 +2,9 @@ footer.footer#contacts
   .container
     .footer__info
       .footer__logo
-        img(src="img/logo/logo-main.png", alt="Logo")
+        picture
+          source(srcset="img/logo/logo-main-sm.png", media="(max-width: 788px)")
+          img(src="img/logo/logo-main.png", alt="Logo")
       .footer__call
         h4.footer__subtitle
           p Возможность обращения в&nbsp;колл-центр по&nbsp;номерам:

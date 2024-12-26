@@ -19,11 +19,6 @@
 .header__logo,
 a.header__logo {
 	display: block;
-	width: 78px;
-
-	@include mobile {
-		width: 140px;
-	}
 }
 
 .header__nav-btn {

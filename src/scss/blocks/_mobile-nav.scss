@@ -16,14 +16,12 @@
   pointer-events: all;
   z-index: 100;
 }
-
 .mobile-nav__header {
   padding: 20px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .mobile-nav__body {
   flex-grow: 1;
   background-color: #F6F6F6;
@@ -33,7 +31,6 @@
 
   padding-top: 45px;
 }
-
 .mobile-nav__btn {
   padding: 2px;
 	border: 1px solid var(--white);
@@ -47,7 +44,6 @@
 		transition: all .1s ease-in-out;
 	}
 }
-
 .mobile-nav-list {
   display: flex;
   flex-direction: column;
@@ -79,4 +75,8 @@
 		border-color: var(--primary-dark);
 		transition: all .3s ease-in-out;
   }
+}
+
+a.mobile-nav__logo {
+  display: block;
 }

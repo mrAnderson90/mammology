@@ -59,7 +59,7 @@ function scripts() {
 		.pipe(browserSync.stream());
 }
 
-async function watching() {
+function watching() {
 	watch(['src/scss/**/*.scss'], styles);
 	watch(['src/img/**/*.*'], images);
 	watch(['src/js/**/*.js'], scripts);

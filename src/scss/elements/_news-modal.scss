@@ -27,7 +27,7 @@
   transition: all 0.2s ease-in;
 
   @include mobile {
-    max-height: 600px;
+    max-height: 500px;
     overflow-y: scroll;
   }
 }

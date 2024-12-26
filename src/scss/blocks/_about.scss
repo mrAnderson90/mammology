@@ -144,6 +144,12 @@
 			left: 10%;
 			transform: rotate(-15.77deg) translate(-50%, 50%);
 		}
+
+		@include mobile {
+			bottom: 15%;
+			left: unset;
+			right: 15%;
+		}
 	}
 
 	&--2 {

@@ -145,20 +145,17 @@
 
 	@include mobile {
 
-		&--cancerous {
-			width: 145px;
-			bottom: 10%;
-		}
+		// &--cancerous {
+		// 	width: 145px;
+		// 	bottom: 10%;
+		// }
 
-		&--skeleton {
-			width: 105px;
-		}
+		// &--skeleton {
+		// 	width: 105px;
+		// }
 
 		&--map {
-			width: 155px;
-			bottom: 50%;
-			right: 10px;
-			transform: translateY(50%) rotate(-25deg);
+			right: 0;
 		}
 	}
 }

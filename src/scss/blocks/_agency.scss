@@ -13,13 +13,17 @@
 	align-items: center;
 	column-gap: 50px;
 
+	@include tablet {
+		column-gap: 10px;
+	}
+
 	@include mobile {
 		margin-bottom: 25px;
 	}
 }
 
 .agency__text {
-	flex-basis: 70%;
+	flex-basis: 60%;
 
 	display: flex;
 	flex-direction: column;
@@ -27,7 +31,7 @@
 	row-gap: 30px;
 
 	@include tablet {
-		flex-basis: 80%;
+		flex-basis: 90%;
 	}
 
 	@include mobile {
@@ -49,11 +53,7 @@
 }
 
 .agency__img {
-	width: 243px;
-
-	@include tablet {
-		width: 200px;
-	}
+	flex-shrink: 0;
 
 	@include mobile {
 		display: none;
