@@ -11,6 +11,6 @@ mixin news-article(id, date, title, imgLgPath, imgSmPath)
 						img(src=imgLgPath, alt=imgLgPath)
 				.new__date 
 					p= date
-			.new__content
-				p= title
+			.new__title
+				h4 !{title}
 			a(href="javascript:;", data-fancybox="gallery", data-src=id).new__link Читать полностью

@@ -2589,7 +2589,12 @@ a.mobile-nav__logo {
   justify-content: flex-end;
 }
 .about__text p {
-  flex-basis: 70%;
+  flex-basis: 60%;
+}
+@media (max-width: 1250px) {
+  .about__text p {
+    flex-basis: 70%;
+  }
 }
 @media (max-width: 788px) {
   .about__text p {
@@ -2671,11 +2676,12 @@ a.mobile-nav__logo {
   .about__decor--1 {
     bottom: 15%;
     left: unset;
-    right: 15%;
+    right: 10%;
+    transform: rotate(15deg);
   }
 }
 .about__decor--2 {
-  top: 70%;
+  top: 73%;
   right: 15%;
   transform: rotate(16.87deg) translateY(-50%);
 }
@@ -2691,7 +2697,7 @@ a.mobile-nav__logo {
   }
 }
 .about__decor--3 {
-  bottom: 0%;
+  bottom: -10px;
   left: 10%;
   transform: rotate(-15.77deg) translate(-50%, 0);
 }
@@ -2990,19 +2996,16 @@ a.mobile-nav__logo {
   }
 }
 
-.new__content {
+.new__title {
   margin-bottom: 10px;
-  min-height: 56px;
-}
-@media (max-width: 1250px) {
-  .new__content {
-    min-height: 42px;
-  }
 }
 @media (max-width: 788px) {
-  .new__content {
+  .new__title {
     min-height: unset;
   }
+}
+.new__title span {
+  display: block;
 }
 
 .new__link,
@@ -3242,7 +3245,7 @@ a.new__link:active {
 
 .prevention__arrow {
   width: 200px;
-  transform: translateY(20px);
+  transform: translate(-30px, 30px);
 }
 @media (max-width: 1250px) {
   .prevention__arrow {
@@ -3303,11 +3306,11 @@ a.new__link:active {
   line-height: 100%;
   font-family: var(--second-family);
   color: var(--primary-dark);
-  text-align: center;
 }
 @media (max-width: 1250px) {
   .prevention__card--main p {
     font-size: 16px;
+    text-align: center;
   }
 }
 
@@ -3366,7 +3369,7 @@ a.new__link:active {
 
 .symptoms__info {
   margin-bottom: 40px;
-  max-width: 500px;
+  max-width: 610px;
 }
 @media (max-width: 1250px) {
   .symptoms__info {
@@ -3510,7 +3513,7 @@ a.new__link:active {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  gap: 30px;
+  gap: 40px;
 }
 @media (max-width: 788px) {
   .learning__body {
@@ -3554,9 +3557,29 @@ a.new__link:active {
 .learning__content {
   flex-basis: 60%;
 }
+.learning__content--1 {
+  flex-basis: 50%;
+}
+.learning__content--2 {
+  flex-basis: 85%;
+}
+@media (max-width: 1250px) {
+  .learning__content--1 {
+    flex-basis: 65%;
+  }
+  .learning__content--2 {
+    flex-basis: 95%;
+  }
+  .learning__content--3 {
+    flex-basis: 90%;
+  }
+}
 @media (max-width: 788px) {
   .learning__content {
     flex-basis: 80%;
+  }
+  .learning__content--3 {
+    flex-basis: 82%;
   }
 }
 
@@ -3577,6 +3600,9 @@ a.new__link:active {
 @media (max-width: 788px) {
   .learning__direction {
     flex-basis: 10%;
+  }
+  .learning__direction--1 {
+    transform: rotate(45deg);
   }
   .learning__direction--2 {
     transform: scaleX(1);

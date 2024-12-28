@@ -70,7 +70,11 @@
 	}
 
 	p {
-		flex-basis: 70%;
+		flex-basis: 60%;
+
+		@include tablet {
+			flex-basis: 70%;
+		}
 
 		@include mobile {
 			flex-basis: 90%;
@@ -148,12 +152,13 @@
 		@include mobile {
 			bottom: 15%;
 			left: unset;
-			right: 15%;
+			right: 10%;
+			transform: rotate(15deg);
 		}
 	}
 
 	&--2 {
-		top: 70%;
+		top: 73%;
 		right: 15%;
 		transform: rotate(16.87deg) translateY(-50%);
 
@@ -168,7 +173,7 @@
 	}
 
 	&--3 {
-		bottom: 0%;
+		bottom: -10px;
 		left: 10%;
 		transform: rotate(-15.77deg) translate(-50%, 0);
 

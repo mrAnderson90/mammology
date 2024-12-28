@@ -10,7 +10,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
-	gap: 30px;
+	gap: 40px;
 
 	@include mobile {
 		gap: 25px;
@@ -52,10 +52,40 @@
 
 .learning__content {
 	flex-basis: 60%;
+	
+	&--1 {
+		flex-basis: 50%;
+	}
+
+	&--2 {
+		flex-basis: 85%;
+	}
+
+	&--3 {
+
+	}
+
+	@include tablet {
+		&--1 {
+			flex-basis: 65%;
+		}
+
+		&--2 {
+			flex-basis: 95%;
+		}
+
+		&--3 {
+			flex-basis: 90%;
+		}
+	}
+
 
 	@include mobile {
 		flex-basis: 80%;
-		// max-width: 265px;
+		
+		&--3 {
+			flex-basis: 82%;
+		}
 	}
 }
 
@@ -78,6 +108,10 @@
 
 	@include mobile {
 		flex-basis: 10%;
+
+		&--1 {
+			transform: rotate(45deg);
+		}
 
 		&--2 {
 			transform: scaleX(1);

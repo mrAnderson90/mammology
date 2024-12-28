@@ -79,16 +79,15 @@
 	}
 }
 
-.new__content {
+.new__title {
 	margin-bottom: 10px;
-	min-height: 56px;
-
-	@include tablet {
-		min-height: 42px;
-	}
 
 	@include mobile {
 		min-height: unset;
+	}
+
+	span {
+		display: block;
 	}
 }
 
