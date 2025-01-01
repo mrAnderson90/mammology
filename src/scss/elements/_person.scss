@@ -17,6 +17,9 @@
 .person__img {
 	grid-row: span 3;
 
+	width: 163px;
+	height: 163px;
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -24,6 +27,16 @@
 
 	border: var(--standart-bd);
 	border-radius: var(--radius);
+
+	@include tablet {
+		width: 112px;
+		height: 112px;
+	}
+
+	@include mobile {
+		width: 100px;
+		height: 100px;
+	}
 }
 .person__name {
 	grid-row: span 1;

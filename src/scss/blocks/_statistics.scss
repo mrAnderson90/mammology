@@ -142,20 +142,25 @@
 	position: absolute;
 	bottom: 0;
 	right: 5px;
+	z-index: -1;
 
 	@include mobile {
 
-		// &--cancerous {
-		// 	width: 145px;
-		// 	bottom: 10%;
-		// }
+		&--cancerous {
+			width: 145px;
+			height: 126px;
+			bottom: 10%;
+		}
 
-		// &--skeleton {
-		// 	width: 105px;
-		// }
+		&--skeleton {
+			width: 105px;
+			height: 105px;
+		}
 
 		&--map {
 			right: 0;
+			bottom: 15px;
+			width: 168px;
 		}
 	}
 }
