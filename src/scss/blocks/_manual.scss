@@ -1,0 +1,16 @@
+.manual {}
+.manual__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manual__img {
+  width: 510px;
+  height: 724px;
+
+  @include mobile {
+    width: 260px;
+    height: unset;
+  }
+}
