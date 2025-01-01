@@ -5,29 +5,25 @@
 			//- id: '#dialog-content',
 			date: '18.11.2024',
 			title: 'Приглашаем вас 23 ноября в 12:00 на особенное мероприятие',
-			imgLgPath: 'img/news/article-image-01.jpg',
-			imgSmPath: 'img/news/article-image-sm-01.jpg'
+			imgPath: 'img/news/article-01',
 		},
 		{
 			id: '#article-02',
 			date: '13.11.2024',
 			title: 'Продолжаем посещать различные учреждения области',
-		  imgLgPath: 'img/news/article-image-02.jpg',
-			imgSmPath: 'img/news/article-image-sm-02.jpg'
+			imgPath: 'img/news/article-02',
 		},
 		{
 			id: '#article-03',
 			date: '11.10.2024',
 			title: 'Наши волонтеры посетили медицинский колледж НИУ «БелГУ»',
-		  imgLgPath: 'img/news/article-image-03.jpg',
-			imgSmPath: 'img/news/article-image-sm-03.jpg'
+			imgPath: 'img/news/article-03',
 		},
 		{
 			id: '#article-04',
 			date: '26.09.2024',
 			title: '<span>Школа Маммологии</span><span>на Таврида.Арт</span>',
-		  imgLgPath: 'img/news/article-image-04.jpg',
-			imgSmPath: 'img/news/article-image-sm-04.jpg'
+			imgPath: 'img/news/article-04',
 		},
 	];
 
@@ -38,7 +34,7 @@ section.section.news#news
 			.swiper
 				.swiper-wrapper.news__wrapper
 					each article in news
-						+news-article(article.id, article.date, article.title, article.imgLgPath, article.imgSmPath)
+						+news-article(article.id, article.date, article.title, article.imgPath)
 				.news__controls
 					.news__control.news__control--prev
 					.news__dots
