@@ -18,7 +18,7 @@
 
 .header__logo,
 a.header__logo {
-	display: block;
+
 }
 
 .header__nav-btn {
@@ -43,4 +43,9 @@ a.header__logo {
 }
 
 .logo {
+	display: block;
+
+	@include mobile {
+		width: 145px;
+	}
 }

@@ -1,8 +1,9 @@
 header.header
 	.container
 		.header__row
-			a.header__logo(href="#!")
+			a.header__logo.logo(href="#!")
 				picture
+					source(srcset="img/logo/logo-mobile.webp", media="(max-width: 788px)")
 					source(srcset="img/logo/logo-mobile.png", media="(max-width: 788px)")
 					source(srcset="img/logo/logo-accent-md.png", media="(max-width: 1250px)")
 					img(src="img/logo/logo-accent.png", alt="Logo").logo

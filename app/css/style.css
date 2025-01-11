@@ -2233,11 +2233,6 @@ html.with-fancybox body.hide-scrollbar {
   }
 }
 
-.header__logo,
-a.header__logo {
-  display: block;
-}
-
 .header__nav-btn {
   padding: 2px;
   border: 1px solid var(--white);
@@ -2254,6 +2249,15 @@ a.header__logo {
   border: 1px solid var(--gray);
   box-shadow: 2px 2px 4px 0px rgba(34, 60, 80, 0.2);
   transition: all 0.2s ease-in-out;
+}
+
+.logo {
+  display: block;
+}
+@media (max-width: 788px) {
+  .logo {
+    width: 145px;
+  }
 }
 
 @media (max-width: 788px) {
@@ -3899,6 +3903,11 @@ a.partners__link:active .partners__name {
 
 .footer__logo {
   max-width: 332px;
+}
+@media (max-width: 788px) {
+  .footer__logo {
+    width: 190px;
+  }
 }
 
 .footer__call {

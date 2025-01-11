@@ -15,8 +15,9 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="header__row"><a class="header__logo" href="#!">
+        <div class="header__row"><a class="header__logo logo" href="#!">
             <picture>
+              <source srcset="img/logo/logo-mobile.webp" media="(max-width: 788px)">
               <source srcset="img/logo/logo-mobile.png" media="(max-width: 788px)">
               <source srcset="img/logo/logo-accent-md.png" media="(max-width: 1250px)"><img class="logo" src="img/logo/logo-accent.png" alt="Logo">
             </picture></a>
@@ -37,7 +38,9 @@
     <section class="mobile-nav">
       <h2 class="visually-hidden">Мобильная навигация</h2>
       <div class="mobile-nav__header"><a class="mobile-nav__logo logo" href="#!">
-          <picture><img src="img/logo/logo-mobile.png" alt="Школа Маммологии"></picture></a>
+          <picture>
+            <source srcset="img/logo/logo-mobile.webp" media="(max-width: 788px)"><img src="img/logo/logo-mobile.png" alt="Школа Маммологии">
+          </picture></a>
         <button class="mobile-nav__btn" id="closeMobileNav"><img src="img/icons/nav-btn-close.svg" alt="Close navigation"></button>
       </div>
       <div class="mobile-nav__body">
@@ -62,13 +65,11 @@
           <div class="promo__body">
             <div class="promo__img">
               <picture>
-                <source srcset="img/promo/promo-01-sm.jpg" media="(max-width: 788px)">
                 <source srcset="img/promo/promo-01-md.jpg" media="(max-width: 1250px)"><img src="img/promo/promo-01-lg.jpg" alt="lection-1">
               </picture>
             </div>
             <div class="promo__img promo__img--small">
               <picture>
-                <source srcset="img/promo/promo-02-sm.jpg" media="(max-width: 788px)">
                 <source srcset="img/promo/promo-02-md.jpg" media="(max-width: 1250px)"><img src="img/promo/promo-02-lg.jpg" alt="lection-2">
               </picture>
             </div>
@@ -341,13 +342,13 @@
                 </ul>
                 <div class="symptoms__materials symptoms__materials--md">
                   <div class="symptoms__img" data-control="modal" data-target="manual"><img src="img/methodological_materials/flayer.png" alt="Флаер Симптомы"></div>
-                  <div class="symptoms__btn"><a class="btn btn--primary btn--wide" href="../manual.zip">Скачать буклет</a></div>
+                  <div class="symptoms__btn"><a class="btn btn--primary btn--wide" href="manual.jpg" target="_blank">Скачать буклет</a></div>
                 </div>
               </div>
             </div>
             <div class="symptoms__materials">
               <div class="symptoms__img" data-control="modal" data-target="manual"><img src="img/methodological_materials/flayer.png" alt="Флаер Симптомы"></div>
-              <div class="symptoms__btn"><a class="btn btn--primary btn--wide" href="../manual.zip">Скачать буклет</a></div>
+              <div class="symptoms__btn"><a class="btn btn--primary btn--wide" href="manual.jpg" target="_blank">Скачать буклет</a></div>
             </div>
           </div>
         </div>
