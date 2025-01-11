@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 
   @include tablet {
     justify-content: center;
@@ -20,8 +20,8 @@ a.social__link {
 
   padding: 6px;
 
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
 
   background-color: var(--primary-dark);
   border-radius: 50%;

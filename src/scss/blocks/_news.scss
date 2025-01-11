@@ -3,6 +3,14 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+
+	@include tablet {
+		background-image: url('../img/background/bg-03-md.jpg');
+	}
+
+	@include mobile {
+		background-image: url('../img/background/bg-03-sm.jpg');
+	}
 }
 
 .news__title {

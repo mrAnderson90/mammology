@@ -3,6 +3,10 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+
+	@include mobile {
+		background-image: url('../img/background/bg-02-sm.jpg');
+	}
 }
 
 .about__header {

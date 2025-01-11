@@ -2395,6 +2395,16 @@ a.mobile-nav__logo {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (max-width: 1250px) {
+  .promo {
+    background-image: url("../img/background/bg-01-md.jpg");
+  }
+}
+@media (max-width: 788px) {
+  .promo {
+    background-image: url("../img/background/bg-01-sm.jpg");
+  }
+}
 
 .promo__header {
   padding: 25px 0;
@@ -2523,6 +2533,11 @@ a.mobile-nav__logo {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (max-width: 788px) {
+  .about {
+    background-image: url("../img/background/bg-02-sm.jpg");
+  }
 }
 
 .about__header {
@@ -2723,6 +2738,16 @@ a.mobile-nav__logo {
   background-repeat: no-repeat;
   background-position: center;
 }
+@media (max-width: 1250px) {
+  .news {
+    background-image: url("../img/background/bg-03-md.jpg");
+  }
+}
+@media (max-width: 788px) {
+  .news {
+    background-image: url("../img/background/bg-03-sm.jpg");
+  }
+}
 
 .news__wrapper {
   margin-bottom: 30px;
@@ -2822,6 +2847,16 @@ a.mobile-nav__logo {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+@media (max-width: 1250px) {
+  .news {
+    background-image: url("../img/background/bg-03-md.jpg");
+  }
+}
+@media (max-width: 788px) {
+  .news {
+    background-image: url("../img/background/bg-03-sm.jpg");
+  }
 }
 
 .news__wrapper {
@@ -3321,8 +3356,10 @@ a.new__link:active {
 @media (max-width: 1250px) {
   .prevention__card--main p {
     font-size: 16px;
-    text-align: center;
   }
+}
+.prevention__card span {
+  display: block;
 }
 
 .prevention__step {
@@ -4265,7 +4302,7 @@ a.btn--wide {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 @media (max-width: 1250px) {
   .social__list {
@@ -4279,8 +4316,8 @@ a.social__link {
   justify-content: center;
   align-items: center;
   padding: 6px;
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   background-color: var(--primary-dark);
   border-radius: 50%;
   transition: all 0.2s ease-in-out;

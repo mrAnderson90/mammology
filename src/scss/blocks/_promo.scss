@@ -3,6 +3,14 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+
+	@include tablet {
+		background-image: url('../img/background/bg-01-md.jpg');
+	}
+
+	@include mobile {
+		background-image: url('../img/background/bg-01-sm.jpg');
+	}
 }
 
 .promo__header {

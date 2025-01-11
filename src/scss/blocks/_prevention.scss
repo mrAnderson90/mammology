@@ -120,9 +120,12 @@
 
 			@include tablet {
 				font-size: 16px;
-				text-align: center;
 			}
 		}
+	}
+
+	span {
+		display: block;
 	}
 }
 
